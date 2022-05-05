@@ -4,6 +4,7 @@
     <string name="add_note_buttn">Добавить заметку</string>
     <string name="hint_title">Заголовок заметки</string>
     <string name="hint_description">Описание заметки</string>
+    <string name="toast_fill_fields">Все поля должны быть заполнены.</string>
     <string-array name="days">
         <item>Понедельник</item>
         <item>Вторник</item>

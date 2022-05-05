@@ -17,8 +17,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     public void setOnNoteClickListener(OnNoteClickListener onNoteClickListener) {
         this.onNoteClickListener = onNoteClickListener;
     }
-
-
+    
     interface OnNoteClickListener {
         void onNoteClick(int pos);
         void onLongClick(int pos);
@@ -41,7 +40,8 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         Note note = notes.get(position);
         holder.textViewTitle.setText(note.getTitle());
         holder.textViewDescription.setText(note.getDescription());
-        holder.textViewDeyOfWeek.setText(note.getDayOfWeek());
+        holder.textViewDeyOfWeek.setText(Note.getDayAsString(note.getDayOfWeek()));
+
         int colorId = note.getPriority();
         switch (colorId) {
             case 1:

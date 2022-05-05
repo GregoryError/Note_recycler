@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "notes.db";
-    private static final int VERSION = 1;
+    private static final int VERSION = 2;
 
     public static String getDbName() {
         return DB_NAME;
